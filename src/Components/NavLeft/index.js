@@ -13,12 +13,12 @@ export default class NavLeft extends React.Component {
 
     componentDidMount() {
         const menuTreeNode = this.renderMenu(MenuConfig);
-
         this.setState({
             menuTreeNode
         })
     }
-    renderMenu = (data) => {
+
+    renderMenu(data) {
         return data.map((item) => {
             if (item.children) {
                 return (
@@ -30,12 +30,13 @@ export default class NavLeft extends React.Component {
             return <Menu.Item title={item.title} key={item.key}>{item.title}</Menu.Item>
         })
     }
+
     render() {
         return (
             <div>
                 <div className="logo">
                     <img src="/assets/logo.svg" alt="" />
-                    <h1>I-Bike</h1>
+                    <h1>I Bike MS</h1>
                 </div>
                 <Menu theme='dark'>
                     {this.state.menuTreeNode}
