@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
-import Admin from './Admin';
+import Route from './Route/Route.js'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Admin />
+    <Route />
   </React.StrictMode>,
   document.getElementById('root')
 );

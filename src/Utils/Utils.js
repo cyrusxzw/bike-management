@@ -3,6 +3,8 @@ export default {
         if (!date) {
             return '';
         }
-        return `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+        const minutes = date.getMinutes() <= 9 ? `0${date.getMinutes()}` : date.getMinutes();
+        const seconds = date.getSeconds() <= 9 ? `0${date.getSeconds()}` : date.getSeconds();
+        return `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()} ${date.getHours()}:${minutes}:${seconds}`;
     }
 }
