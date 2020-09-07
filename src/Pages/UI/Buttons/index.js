@@ -10,7 +10,7 @@ const RadioGroup = Radio.Group;
 const Buttons = () => {
 
     const [loading, setLoading] = useState(true);
-    const [size, setSize] = useState("default");
+    const [size, setSize] = useState();
 
     return (
         <div className="button-container">
@@ -45,11 +45,11 @@ const Buttons = () => {
                 </ButtonGroup>
             </Card>
             <Card title="Button Size">
-                <RadioGroup onChange={(e) => {
+                <RadioGroup defaultValue={size} onChange={(e) => {
                     setSize(e.target.value);
                 }}>
                     <Radio value="small">Small</Radio>
-                    <Radio value="default">Medium</Radio>
+                    <Radio>Medium</Radio>
                     <Radio value="large">Large</Radio>
                 </RadioGroup>
                 <Button type="primary" size={size}>Ibike</Button>
