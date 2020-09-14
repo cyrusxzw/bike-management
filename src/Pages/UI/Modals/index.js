@@ -19,7 +19,7 @@ export default () => {
 
     const handleConfirm = (type) => {
         Modal[type]({
-            title: 'Confirm',
+            title: [type],
             content: 'Do you know?',
             onOk() {
                 console.log('ok');
@@ -31,8 +31,8 @@ export default () => {
     }
 
     return (
-        <div className="modal-container">
-            <Card title="Basic Modals">
+        <div className="content-container">
+            <Card title="Basic Modals" className="card-wrap">
                 <Button type="primary" onClick={() => {
                     handleOpen('showModal1')
                 }}>Open</Button>
@@ -86,7 +86,7 @@ export default () => {
                 }}>
                 Welcome to my system!
             </Modal>
-            <Card title="Confirm Modals">
+            <Card title="Confirm Modals" className="card-wrap">
                 <Button type="primary" onClick={() => {
                     handleConfirm('info')
                 }}>Info</Button>

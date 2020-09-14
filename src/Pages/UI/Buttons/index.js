@@ -13,15 +13,15 @@ const Buttons = () => {
     const [size, setSize] = useState();
 
     return (
-        <div className="button-container">
-            <Card title="Basic Buttons">
+        <div className="content-container">
+            <Card title="Basic Buttons" className="card-wrap">
                 <Button type="primary">Ibike</Button>
                 <Button>Ibike</Button>
                 <Button type="dashed">Ibike</Button>
                 <Button type="danger">Ibike</Button>
                 <Button disabled>Ibike</Button>
             </Card>
-            <Card title="Buttons Contain Icon">
+            <Card title="Buttons Contain Icon" className="card-wrap">
                 <Button icon={<PlusOutlined />}>Add</Button>
                 <Button icon={<EditOutlined />}>Edit</Button>
                 <Button icon={<DeleteOutlined />}>Delete</Button>
@@ -29,7 +29,7 @@ const Buttons = () => {
                 <Button icon={<SearchOutlined />}>Search</Button>
                 <Button icon={<CloudDownloadOutlined />}>Download</Button>
             </Card>
-            <Card title="Loading">
+            <Card title="Loading" className="card-wrap">
                 <Button type="primary" loading={loading}>Confirm</Button>
                 <Button type="primary" shape="circle" loading={loading}></Button>
                 <Button loading={loading}>Loading</Button>
@@ -38,13 +38,13 @@ const Buttons = () => {
                     setLoading(false)
                 }}>Close</Button>
             </Card>
-            <Card title="Button Group">
+            <Card title="Button Group" className="card-wrap">
                 <ButtonGroup>
                     <Button><ArrowLeftOutlined />Prev</Button>
                     <Button>Next<ArrowRightOutlined /></Button>
                 </ButtonGroup>
             </Card>
-            <Card title="Button Size">
+            <Card title="Button Size" className="card-wrap">
                 <RadioGroup defaultValue={size} onChange={(e) => {
                     setSize(e.target.value);
                 }}>
