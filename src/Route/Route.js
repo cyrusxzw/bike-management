@@ -9,6 +9,8 @@ import Modals from '../Pages/UI/Modals';
 import Notification from '../Pages/UI/Notification';
 import Message from '../Pages/UI/Message';
 import Loadings from '../Pages/UI/Loadings';
+import Tabs from '../Pages/UI/Tabs';
+import Gallery from '../Pages/UI/Gallery';
 import NoMatch from '../Pages/NoMatch';
 
 
@@ -29,6 +31,8 @@ export default class Router extends React.Component {
                                 <Route path="/admin/ui/loadings" component={Loadings}></Route>
                                 <Route path="/admin/ui/notification" component={Notification}></Route>
                                 <Route path="/admin/ui/messages" component={Message}></Route>
+                                <Route path="/admin/ui/tabs" component={Tabs}></Route>
+                                <Route path="/admin/ui/gallery" component={Gallery}></Route>
                                 <Route component={NoMatch} />
                             </Switch>
                         </Admin>
