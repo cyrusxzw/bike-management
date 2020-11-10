@@ -11,6 +11,8 @@ import Message from '../Pages/UI/Message';
 import Loadings from '../Pages/UI/Loadings';
 import Tabs from '../Pages/UI/Tabs';
 import Gallery from '../Pages/UI/Gallery';
+import Carousel from '../Pages/UI/Slider';
+import FormLogin from '../Pages/Form/login';
 import NoMatch from '../Pages/NoMatch';
 
 
@@ -33,6 +35,8 @@ export default class Router extends React.Component {
                                 <Route path="/admin/ui/messages" component={Message}></Route>
                                 <Route path="/admin/ui/tabs" component={Tabs}></Route>
                                 <Route path="/admin/ui/gallery" component={Gallery}></Route>
+                                <Route path="/admin/ui/carousel" component={Carousel}></Route>
+                                <Route path="/admin/form/login" component={FormLogin}></Route>
                                 <Route component={NoMatch} />
                             </Switch>
                         </Admin>
