@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/bike-management/static/css/main.bea63e8a.chunk.css",
+    "main.js": "/bike-management/static/js/main.8bba446f.chunk.js",
+    "main.js.map": "/bike-management/static/js/main.8bba446f.chunk.js.map",
+    "runtime-main.js": "/bike-management/static/js/runtime-main.21c20f49.js",
+    "runtime-main.js.map": "/bike-management/static/js/runtime-main.21c20f49.js.map",
+    "static/css/2.68aa1aa3.chunk.css": "/bike-management/static/css/2.68aa1aa3.chunk.css",
+    "static/js/2.f4674044.chunk.js": "/bike-management/static/js/2.f4674044.chunk.js",
+    "static/js/2.f4674044.chunk.js.map": "/bike-management/static/js/2.f4674044.chunk.js.map",
+    "index.html": "/bike-management/index.html",
+    "precache-manifest.1e21dd293cefbecb94854d0ee25d0883.js": "/bike-management/precache-manifest.1e21dd293cefbecb94854d0ee25d0883.js",
+    "service-worker.js": "/bike-management/service-worker.js",
+    "static/css/2.68aa1aa3.chunk.css.map": "/bike-management/static/css/2.68aa1aa3.chunk.css.map",
+    "static/css/main.bea63e8a.chunk.css.map": "/bike-management/static/css/main.bea63e8a.chunk.css.map",
+    "static/js/2.f4674044.chunk.js.LICENSE.txt": "/bike-management/static/js/2.f4674044.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.21c20f49.js",
+    "static/css/2.68aa1aa3.chunk.css",
+    "static/js/2.f4674044.chunk.js",
+    "static/css/main.bea63e8a.chunk.css",
+    "static/js/main.8bba446f.chunk.js"
+  ]
+}
