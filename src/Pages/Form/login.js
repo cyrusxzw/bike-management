@@ -1,5 +1,6 @@
 import React from 'react';
-import { Card, Form, Input, Button } from 'antd';
+import { Card, Form, Input, Button, Checkbox } from 'antd';
+import { UserOutlined, LockFilled } from '@ant-design/icons';
 
 
 export default class FormLogin extends React.Component {
@@ -21,9 +22,17 @@ export default class FormLogin extends React.Component {
                                     required: true,
                                     message: 'Please input your username!',
                                 },
+                                {
+                                    min: 5, max: 10,
+                                    message: 'Please input 5-10!',
+                                },
+                                {
+                                    pattern: '^[a-zA-Z]+$',
+                                    message: 'must enter letter only'
+                                }
                             ]}
                         >
-                            <Input />
+                            <Input prefix={<UserOutlined />} />
                         </Item>
 
                         <Item
@@ -36,7 +45,7 @@ export default class FormLogin extends React.Component {
                                 },
                             ]}
                         >
-                            <Input.Password />
+                            <Input.Password prefix={<LockFilled />} />
                         </Item>
                         <Item>
                             <Button type="primary" htmlType="submit">
@@ -71,6 +80,9 @@ export default class FormLogin extends React.Component {
                             ]}
                         >
                             <Input.Password />
+                        </Item>
+                        <Item>
+                            <Checkbox checked>记住密码</Checkbox>
                         </Item>
                         <Item>
                             <Button type="primary" htmlType="submit">
