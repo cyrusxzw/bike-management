@@ -24,10 +24,10 @@ export default class Router extends React.Component {
         return (
             <HashRouter>
                 <App>
-                    <Route path="/login" component={Login} />
-                    <Route path="/admin" render={() =>
-                        <Admin>
-                            <Switch>
+                    <Switch>
+                        <Route path="/login" component={Login} />
+                        <Route path="/admin" render={() =>
+                            <Admin>
                                 <Route path="/admin/home" component={Home}></Route>
                                 <Route path="/admin/ui/buttons" component={Buttons}></Route>
                                 <Route path="/admin/ui/modals" component={Modals}></Route>
@@ -39,12 +39,11 @@ export default class Router extends React.Component {
                                 <Route path="/admin/ui/carousel" component={Carousel}></Route>
                                 <Route path="/admin/form/login" component={FormLogin}></Route>
                                 <Route path="/admin/form/reg" component={FormRegister}></Route>
-                                <Route component={NoMatch} />
-                            </Switch>
-                        </Admin>
-                    } />
-                    <Route path="/order/detail" component={Login} />
-
+                            </Admin>
+                        } />
+                        <Route path="/order/detail" component={Login} />
+                        <Route component={NoMatch} />
+                    </Switch>
                 </App>
             </HashRouter>
         )
